@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project for Regular Expression</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="section">
+      <h1>Create Profile</h1>
+      <form id="form">
+        <!-- Change from div to form -->
+        <div>
+          <div>
+            <input id="fullName" type="text" placeholder="Name" />
+            <p id="nameMassage">Ex: Sakib Al Hasan</p>
+          </div>
+
+          <div>
+            <input id="username" type="text" placeholder="Username" />
+            <p id="userNameMassage">Ex: sakib_404</p>
+          </div>
+
+          <div>
+            <input id="email" type="text" placeholder="Email" />
+            <p id="emailMassage">Ex: sakib.404@gmail.com</p>
+          </div>
+
+          <div>
+            <input id="phone" type="text" placeholder="Phone Number" />
+            <p id="phoneMassage">Ex: +8801871-938188</p>
+          </div>
+
+          <div class="row-flex">
+            <div>
+              <input
+                id="generatedpassword"
+                type="text"
+                placeholder="Password"
+              />
+              <br />
+              <p>Generate strong password</p>
+            </div>
+            <div>
+              <button class="btn-primary generate" type="button" id="generate">
+                Generate
+              </button>
+            </div>
+            <div>
+              <button class="btn-secondary copy" type="button">Copy</button>
+            </div>
+          </div>
+
+          <div class="row-flex">
+            <div>
+              <input id="realNumbers" type="text" placeholder="password" />
+              <br />
+              <p id="passwordMassage">Letters-Numbers-Signs</p>
+            </div>
+            <div>
+              <input
+                id="confirmPassword"
+                type="text"
+                placeholder="Confirm Password"
+              />
+            </div>
+          </div>
+
+          <div>
+            <button id="submit" class="btn-primary" type="submit">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </form>
+      <!-- Close the form tag here -->
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

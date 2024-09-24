@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+#submit {
+  width: 100%;
+  margin-top: 15px;
+}
+
+section {
+  padding: 30px 40px;
+  margin: 40px auto;
+  background-color: #34495e; /* Dark blue-gray background */
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.green {
+  font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+  color: #ecf0f1;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  margin-top: -5px;
+  letter-spacing: 1px;
+}
+
+#confirmPassword,
+.generate,
+.copy {
+  margin-top: -85px;
+  margin-bottom: 25px;
+}
+
+/* Input Fields */
+input {
+  border: 2px solid #bdc3c7;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1abc9c; /* Vibrant teal on focus */
+  box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+/* Flex Container */
+.row-flex {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #1abc9c; /* Teal color for primary button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background-color: #16a085;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #e74c3c; /* Red color for secondary button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Placeholder styling */
+input::placeholder {
+  color: #95a5a6; /* Soft gray for placeholders */
+}
+
+/* Paragraph styling */
+p {
+  color: #ecf0f1;
+  font-size: 0.85rem;
+  margin: 5px 0 10px;
+}
+
+/* Responsiveness for mobile devices (screens smaller than 480px) */
+@media (max-width: 480px) {
+  section {
+    padding: 20px 15px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .row-flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  #confirmPassword,
+  .generate,
+  .copy {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  #submit {
+    width: 100%;
+    padding: 10px;
+  }
+}
