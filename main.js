@@ -94,7 +94,6 @@ function generatePassword() {
   }
 
   generatedpasswordInput.value = password; // Place generated password in the input
-  myPasswordInput.value = password; // Also set it in the realNumbers input
 }
 
 // Copy Password
